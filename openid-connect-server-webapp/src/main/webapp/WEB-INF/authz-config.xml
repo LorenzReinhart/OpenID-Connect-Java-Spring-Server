@@ -36,7 +36,7 @@
 		user-approval-handler-ref="tofuUserApprovalHandler" 
 		request-validator-ref="oauthRequestValidator"
 		redirect-resolver-ref="blacklistAwareRedirectResolver"
-		authorization-endpoint-url="/authorize" 
+		authorization-endpoint-url="/realms/openidconnect/protocol/openid-connect/auth"
 		token-endpoint-url="/token"
 		error-page="/error">
 		

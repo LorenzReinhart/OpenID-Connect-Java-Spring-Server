@@ -124,7 +124,8 @@
 
 	<security:http authentication-manager-ref="authenticationManager">
 
-		<security:intercept-url pattern="/authorize" access="hasRole('ROLE_USER')" />
+		<!-- <security:intercept-url pattern="/authorize" access="hasRole('ROLE_USER')" /> -->
+		<security:intercept-url pattern="/realms/openidconnect/protocol/openid-connect/auth" access="hasRole('ROLE_USER')" />
 		<security:intercept-url pattern="/**" access="permitAll" />
 
 		<security:form-login login-page="/login" authentication-failure-url="/login?error=failure" authentication-success-handler-ref="authenticationTimeStamper" />
