@@ -37,7 +37,7 @@
 		request-validator-ref="oauthRequestValidator"
 		redirect-resolver-ref="blacklistAwareRedirectResolver"
 		authorization-endpoint-url="/realms/openidconnect/protocol/openid-connect/auth"
-		token-endpoint-url="/token"
+		token-endpoint-url="/realms/openidconnect/protocol/openid-connect/token"
 		error-page="/error">
 		
 		<oauth:authorization-code authorization-code-services-ref="defaultOAuth2AuthorizationCodeService"/>
